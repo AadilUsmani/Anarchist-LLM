@@ -1,29 +1,99 @@
-.venv/
+# =============================================================================
+# Git Ignore - Anarchist LLM & GPT-1900 Research Suite
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-dev-ignore/
-report.md
-eval_bundle/
-data/
-instruct_data/
+*.py[cod]
+*$py.class
+*.so
 
-# Secrets
+# C extensions
+*.obj
+*.o
+*.pyd
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments & Secrets
 .env
+.env.*
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
 
-# Local setup
-.claude/
-*-mcp/
+# PyTorch / ML Model Weights & Large Binary Checkpoints (>100MB)
+models/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.onnx
+*.h5
+*.tflite
+*.joblib
+*.pkl.gz
 
+# Local SQLite databases & runtime data
+*.db
+*.sqlite
+*.sqlite3
+chat_history.db
+experiment_history.db
 
-CLAUDE.md
-wandb/
-
-dask-*
-results/*/hf_cache/
+# Logs & Monitoring
 *.log
 runs/*.log
+wandb/
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-# Prevent stray images at repo root
-/*.png
-/*.jpg
-/*.jpegresults/physics_eval_v11_no_assumptions/hf_cache/
+# Cache & Hugging Face downloads
+hf_cache/
+results/*/hf_cache/
+results/**/hf_cache/
+eval_bundle/
+dev-ignore/
+data/
+instruct_data/
+dask-*
+
+# IDEs, Text Editors, & OS Files
+.idea/
+.vscode/
+.claude/
+*.swp
+*.swo
+*~
+CLAUDE.md
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Deployment build artifacts
+.vercel/
+.next/
+node_modules/

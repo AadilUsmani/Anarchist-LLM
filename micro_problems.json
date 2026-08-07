@@ -1,0 +1,194 @@
+{
+  "algorithms": {
+    "merge_sort": {
+      "target_algorithm": "Merge Sort",
+      "optimal_complexity": "O(n log n)",
+      "structural_pattern": "divide_and_conquer",
+      "corpus_status": "absent",
+      "instances": [
+        {
+          "id": "merge_sort_1",
+          "title": "Census Ledger Sorting",
+          "domain": "Census Administration",
+          "prompt": "A clerk at the General Register Office must arrange 10,000 parish ledgers by surname across 50 counties. Each ledger contains hundreds of names in no particular order. Describe the most efficient procedure for arranging them so any name can be found quickly."
+        },
+        {
+          "id": "merge_sort_2",
+          "title": "Military Dispatch Sorting",
+          "domain": "Military Logistics",
+          "prompt": "A regimental adjutant has received 5,000 dispatch cards from various fronts, each marked with an officer's surname and rank but arranged in no order. The commanding general requires them sorted by surname before morning review. Describe the most efficient procedure."
+        },
+        {
+          "id": "merge_sort_3",
+          "title": "Library Catalogue Ordering",
+          "domain": "Library Science",
+          "prompt": "The British Museum Library has received 8,000 new acquisition cards, each bearing an author's surname, which must be intercalated into the existing alphabetical catalogue. The catalogue room has six large tables available. Describe the most efficient procedure for completing this task before the reading room opens."
+        },
+        {
+          "id": "merge_sort_4",
+          "title": "Trade Directory Assembly",
+          "domain": "Commerce",
+          "prompt": "A publisher must compile a trade directory of 12,000 London merchants, submitted on individual slips by borough correspondents in no particular order. The directory must be alphabetical by merchant surname. Describe the most efficient procedure for a team of six clerks."
+        },
+        {
+          "id": "merge_sort_5",
+          "title": "Court Records Arrangement",
+          "domain": "Legal Administration",
+          "prompt": "The Clerk of the Court at the Old Bailey must arrange 6,000 case records by defendant surname before the new legal term begins. The records arrive in bundles from different courtrooms in no order. Describe the most efficient procedure."
+        }
+      ]
+    },
+    "bubble_sort": {
+      "target_algorithm": "Bubble Sort",
+      "optimal_complexity": "O(n^2)",
+      "structural_pattern": "exhaustive",
+      "corpus_status": "present",
+      "instances": [
+        {
+          "id": "bubble_sort_1",
+          "title": "Coin Sorting Baseline",
+          "domain": "Commerce",
+          "prompt": "A bank teller must arrange 200 coins by denomination from smallest to largest. He has time only for a simple, reliable method. Describe the most straightforward procedure he might use."
+        },
+        {
+          "id": "bubble_sort_2",
+          "title": "Examination Results Ordering",
+          "domain": "Education",
+          "prompt": "A schoolmaster has 50 examination papers each marked with a score. He must arrange them from highest to lowest score. Describe the simplest procedure available to him."
+        },
+        {
+          "id": "bubble_sort_3",
+          "title": "Postal Packet Arrangement",
+          "domain": "Postal Administration",
+          "prompt": "A post office sorter must arrange 100 packets by weight using a simple balance scale, from lightest to heaviest, using the most straightforward method possible."
+        }
+      ]
+    },
+    "dijkstra": {
+      "target_algorithm": "Dijkstra's Shortest Path",
+      "optimal_complexity": "O(E log V)",
+      "structural_pattern": "greedy",
+      "corpus_status": "partial",
+      "instances": [
+        {
+          "id": "dijkstra_1",
+          "title": "Telegraph Wire Routing",
+          "domain": "Telecommunications",
+          "prompt": "The General Post Office must connect twelve provincial cities to London via telegraph wire. Each possible connection between cities has a surveyed cost in pounds sterling per mile. Wire is expensive. Describe the most economical procedure for determining which connections to lay such that every city can communicate with London by the shortest possible total path of wire."
+        },
+        {
+          "id": "dijkstra_2",
+          "title": "Railway Schedule Optimisation",
+          "domain": "Railway Engineering",
+          "prompt": "A railway superintendent must determine the quickest route for a mail train between Edinburgh and Bristol, passing through any combination of intermediate stations. Each segment between stations has a known journey time in hours. Describe the procedure for determining the fastest possible route."
+        },
+        {
+          "id": "dijkstra_3",
+          "title": "Canal Network Routing",
+          "domain": "Canal Transport",
+          "prompt": "A coal merchant must transport barges from the colliery at Wigan to the docks at Liverpool via the canal network. Each canal section has a known number of locks which delay the journey. Describe the procedure for finding the route with the fewest locks traversed."
+        },
+        {
+          "id": "dijkstra_4",
+          "title": "Postal Rider Route Planning",
+          "domain": "Postal Administration",
+          "prompt": "The Postmaster General must establish a route for a dispatch rider to carry the Royal Mail from London to ten county towns, where each road between towns has a known travel time in days. The rider must reach every town in the fewest total days. Describe the procedure for determining the optimal set of roads."
+        },
+        {
+          "id": "dijkstra_5",
+          "title": "Military Supply Chain",
+          "domain": "Military Logistics",
+          "prompt": "A quartermaster must route supply wagons from a central depot to five forward positions across a territory. Each road between positions carries a known risk factor expressed as a probability of ambush. Describe the procedure for determining the route of least cumulative risk to each position."
+        }
+      ]
+    },
+    "bfs": {
+      "target_algorithm": "Breadth-First Search",
+      "optimal_complexity": "O(V + E)",
+      "structural_pattern": "graph_traversal",
+      "corpus_status": "partial",
+      "instances": [
+        {
+          "id": "bfs_1",
+          "title": "Cholera Outbreak Mapping",
+          "domain": "Public Health",
+          "prompt": "A medical officer investigating a cholera outbreak must determine which households in a parish have been exposed, given that the disease spreads through shared water pipes between neighbouring properties. Starting from the known source pump, describe the procedure for systematically identifying all affected households in order of their proximity to the source."
+        },
+        {
+          "id": "bfs_2",
+          "title": "Railway Line Inspection",
+          "domain": "Railway Engineering",
+          "prompt": "A railway inspector must examine every station on the network radiating from London, ensuring he visits stations nearest London before those further afield, so that any fault discovered can be reported in order of urgency. Describe his procedure for systematically visiting every station."
+        },
+        {
+          "id": "bfs_3",
+          "title": "Census Enumeration District Coverage",
+          "domain": "Census Administration",
+          "prompt": "A census superintendent must ensure that enumerators cover every sub-district in a county, starting from the county town and working outward to more distant parishes, so that populous areas are counted first. Describe the systematic procedure for assigning and verifying complete coverage."
+        },
+        {
+          "id": "bfs_4",
+          "title": "Telegraph Fault Location",
+          "domain": "Telecommunications",
+          "prompt": "A telegraph engineer must locate a fault somewhere on a network of lines radiating from a central exchange through a series of relay stations. He wishes to test lines closest to the exchange first, progressively moving outward, to find the fault in the fewest total tests. Describe his procedure."
+        }
+      ]
+    },
+    "binary_search": {
+      "target_algorithm": "Binary Search",
+      "optimal_complexity": "O(log n)",
+      "structural_pattern": "binary_decomposition",
+      "corpus_status": "partial",
+      "instances": [
+        {
+          "id": "binary_search_1",
+          "title": "Trade Directory Name Lookup",
+          "domain": "Commerce",
+          "prompt": "A clerk must locate a merchant named Worthington in a trade directory of 50,000 names arranged alphabetically. He has no index. Describe the most efficient procedure for finding the entry with the fewest possible consultations of the directory."
+        },
+        {
+          "id": "binary_search_2",
+          "title": "Admiralty Chart Reference",
+          "domain": "Naval Administration",
+          "prompt": "A naval officer must locate a specific harbour in an Admiralty reference volume containing 3,000 ports arranged alphabetically by name. Describe the most efficient procedure for locating the entry."
+        },
+        {
+          "id": "binary_search_3",
+          "title": "Legal Case Index Search",
+          "domain": "Legal Administration",
+          "prompt": "A barrister's clerk must locate a precedent case involving a defendant named Pennington in a bound index of 8,000 cases arranged alphabetically by defendant surname. Describe the most efficient procedure."
+        }
+      ]
+    },
+    "divide_and_conquer": {
+      "target_algorithm": "Divide and Conquer",
+      "optimal_complexity": "O(n log n)",
+      "structural_pattern": "divide_and_conquer",
+      "corpus_status": "partial",
+      "instances": [
+        {
+          "id": "dc_1",
+          "title": "Land Survey Quadrant Division",
+          "domain": "Land Survey",
+          "prompt": "A land surveyor must produce an accurate map of a large estate of 40,000 acres with a team of eight assistants and limited time. Describe the most efficient procedure for dividing and completing the survey so that all parts are covered without duplication."
+        },
+        {
+          "id": "dc_2",
+          "title": "Census District Subdivision",
+          "domain": "Census Administration",
+          "prompt": "A census superintendent must count the population of a county of 200,000 inhabitants using 32 enumerators in two weeks. Describe the most efficient procedure for dividing the territory and aggregating the results."
+        },
+        {
+          "id": "dc_3",
+          "title": "Military Reconnaissance Division",
+          "domain": "Military Logistics",
+          "prompt": "A colonel must reconnoitre a territory of 500 square miles with 16 cavalry scouts in three days. Describe the most efficient procedure for dividing the reconnaissance so that the entire territory is covered and intelligence is consolidated by the deadline."
+        }
+      ]
+    }
+  },
+  "personas": {
+    "scholar": "You are a consulting scholar retained by the Royal Statistical Society. You have read widely across all published works of science, history, commerce, and natural philosophy available as of 1899. You reason carefully from first principles and from what is known. You do not speculate beyond what evidence permits.",
+    "mechanist": "You are an operator of Hollerith's tabulating machinery, retained by the Census Bureau. You are accustomed to reducing complex arrangements of information into systematic mechanical procedures. You think in terms of operations, sequences, and efficient handling of large quantities of records."
+  }
+}
